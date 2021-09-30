@@ -1,0 +1,12 @@
+version: '3.1'
+services:
+  rest-service:
+    image: rest-service-initial:0.0.1-SNAPSHOT
+    ports:
+      - "8080:8080"
+# 设置cpu和内存大小
+    deploy:
+      resources:
+        limits:
+          cpus: '2'
+          memory: '512M'
